@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".NewsActivity">
+
+    <EditText
+        android:id="@+id/txtNewsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Заголовок"
+        android:inputType="textMultiLine"/>
+
+    <EditText
+        android:id="@+id/txtNewsDescription"
+        android:layout_width="390dp"
+        android:layout_height="117dp"
+        android:layout_below="@id/txtNewsName"
+        android:layout_marginTop="20dp"
+        android:hint="Текст"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNewsDescription"
+        android:layout_marginTop="9dp"
+        android:text="Добавить"
+        android:textAllCaps="false"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="9dp"
+        android:text="Изменить"
+        android:textAllCaps="false"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="19dp"
+        android:text="Удалить"
+        android:textAllCaps="false"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="77dp"
+        android:text="Вывод всех новостей"
+        android:textAllCaps="false"
+        android:textSize="24dp" />
+</RelativeLayout>
